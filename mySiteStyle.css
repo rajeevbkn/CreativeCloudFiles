@@ -1,0 +1,26 @@
+p {
+font-family: Helvetica;
+
+}
+
+ul {
+  display: inline-flex;
+  justify-content:space-between;
+  font-family: loto, sans-serif;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  background-color: #edddb4;
+  border-style: groove;
+  border-radius: 15px;
+  box-sizing: border-box;
+  min-width: 150px;
+  min-height: 25px;
+}
+
+li: hover {
+background-color: #ede0f4; 
+}

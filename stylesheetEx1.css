@@ -1,0 +1,71 @@
+/* css style sheet */
+.header1 {
+	font-family: "Lucida Grande";
+	color: blue;
+	line-height: 0;
+	background-color: #cccc33;
+	position: relative;
+	border-bottom: 3px solid black;
+	text-align: auto;
+	padding: auto;
+	border-radius: 5px;
+	margin-top: auto;
+	display: flex;
+	box-shadow: 10px 5px 5px olive;	
+}
+
+#pageheader {
+	position: relative;
+}
+
+@ media screen and (min-device-width: 320px) and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-hyphenate-charset) {
+	.header1 {
+	width: 100%;
+	}
+	#pageheading {
+	width: 100%;
+	}
+	.navbar1 {
+	width: 100%;
+	}
+	button {
+	width: 100%;
+	}
+}
+
+.navbar1 {
+	display: flex;
+	justify-content: space-evenly;
+	position: relative;
+	margin-top: 10px;
+	background-color: #666600;
+	border-radius: 5px;
+}
+
+button {
+	font-family: courier;
+	background-color: yellow;
+	border: 1px solid red;
+	width: 15%;
+	margin: 5px 5px;
+	border-radius: 15px;
+}
+
+button:hover {
+	background-color: #A13FFF;
+	color: #ffffff;
+}
+
+.mainBodyContainer {
+	display: flex;
+	margin: 0 5px;
+	font-family: arial;
+	justify-content: space-between;	
+}
+
+p {
+	margin: 5px;
+    line-height: 1.2;
+    box-shadow: 1px 5px 1px rgba(171, 168, 178, 0.5);
+}
+

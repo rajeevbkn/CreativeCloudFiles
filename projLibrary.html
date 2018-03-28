@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <title>
+            Navbar
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+        
+        header {
+            font-family: sans-serif;
+            font-size: 16px;
+            color:beige;
+            background-color: darkkhaki;
+            width: 100%;
+            max-height: 100px;
+            text-align: center;
+            padding-top: auto;
+        }
+        
+        header a img {
+            width: 50px;
+            height: 55px;
+            text-decoration: none;
+            float: left;
+        }
+        
+        header h1 {
+            color:beige;
+        }
+
+            .navbar {
+            width: 100%;
+            height: auto;
+            background-color: NaN;
+            display: flex;
+            }
+        
+        button {
+            background-color: NaN;
+            outline: none;
+            min-width: 90px;
+            min-height: 40px;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: burlywood;
+            border-radius: 5%;
+            margin: 0 10px;
+        }
+        
+        button:hover {
+            background-color: darkkhaki;
+            color: black;
+            text-decoration: none;
+        }
+        
+            .dropdown {
+            background-color: NaN;
+            color:rebeccapurple;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            position: absolute;
+            display: none;
+
+            }
+
+            .menu:hover .dropdown {
+            display: block;
+            }
+
+            .dropdownList {
+            font-family: sans-serif;
+            text-align: left;
+            margin:0;
+            padding: 15px;
+            width:auto;
+            }
+
+            .dropdownListLink {
+            background-color: antiquewhite;
+            font-size: 14px;
+            list-style-type: none;
+            padding: 10px;
+            }
+
+            .dropdownListLink:hover {
+            color:coral;
+            font-size: 14px;  
+            }
+
+            .dropdownListLink:hover .menubtn {
+            background-color: darkkhaki;
+            color: black;
+            width: 160px;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 5%;
+            text-decoration: none;
+            }
+        
+            .formContainer {
+            display: flex;    
+            }
+        
+        input {
+            font-family: sans-serif;
+            color:#ccc;
+            font-size: 16px;
+            padding-left: 16px;
+            }
+        
+            .searchbtn {
+            max-width: 40px;
+            max-height: 40px;
+            background-color: navy;
+            }
+        
+            .imageContainer {
+                margin-top: 5px;
+                display: flex;
+                width: NaN;
+                height: NaN;
+                background-color: NaN;
+            }
+        
+            .ic1 {
+            height: 400px;
+            width: 100%;                
+            }
+        
+            .sideMainSideContainer {
+                background-color: beige;
+                color: orange;
+                font-family: verdana;
+                display: flex;
+                text-align: justify;
+                margin: 10px 5px;
+                padding: 10px;
+            }
+            
+            .leftSide {
+                flex: 1;
+                order: 1;
+                padding: 5px;
+            }
+            
+            .mainCenter {
+                flex: 2;
+                order: 2;
+                padding: 5px;
+            }
+            
+            .rightSide {
+                flex: 1;
+                order: 3;
+                padding: 5px;
+            }
+            .leftSideList, li {
+                list-style-type: none;
+                padding: 5px;
+                text-align: center;
+                color: brown;
+            }
+            .flyOut1 {
+                background-color: aquamarine;
+                border-left: 10px solid green;
+                width: 100%;
+                height: auto;
+                padding: 5px;
+                margin: auto;
+                font-family: verdana;
+            }
+            .flyOut2 {
+                background-color: #d9c09b;
+                border-left: 10px solid #d37e07;
+                width: 100%;
+                height: auto;
+                padding: 5px;
+                margin: auto;
+                font-family: verdana;
+            }
+            .flyOut3 {
+                background-color: #e59494;
+                border-left: 10px solid #d20808;
+                width: 100%;
+                height: auto;
+                padding: 5px;
+                margin: auto;
+                font-family: verdana;
+            }
+            .textCardContainer {
+                display: flex;
+                width:100%;
+                height:auto;
+                margin: 5px;
+                justify-content: space-between;
+                background-color: NaN;
+            }
+            
+            .textCard1 {
+                width: 30%;
+                background-color: #eebedf;
+                flex: 3;
+                padding: 10px;
+                margin: 5px;
+                text-align: justify;
+                font-family: verdana;
+            }
+            
+            .textCard2 {
+                width: 30%;
+                background-color: #eeeeaf;
+                flex: 4;
+                padding: 10px;
+                margin: 5px;
+                text-align: justify;
+                font-family: verdana;
+            }
+            
+            .textCard3 {
+                width: 30%;
+                background-color: #b7dfae;
+                flex: 3;
+                padding: 10px;
+                margin: 5px;
+                text-align: justify;
+                font-family: verdana;
+            }
+            
+            .cardContainer2 {
+                display: flex;
+                margin: 5px;
+                padding: 10px;
+            }
+            
+            .card1 {
+                flex: 1;
+                font-family: verdana;
+                text-align: justify;
+                background-color: rgba( 141, 141, 245, .8 );
+                margin: 5px;
+                padding: 10px;
+                color: rgba( 59, 59, 179, 1 );
+            }
+            
+            .card2 {
+                flex: 1;
+                font-family: verdana;
+                text-align: justify;
+                background-color: rgba( 247, 2, 210, .8 );
+                margin: 5px;
+                padding: 10px;
+                color: rgba( 142, 26, 124, 1 );
+            }
+            .imgCardContainer {
+                display: flex;
+                width: 100%;
+                height: auto;
+                margin: 5px;
+                padding: 5px;
+                background-color: NaN;
+            }
+            
+            .imgCard1 {
+                flex: 1;
+                order: 1;
+                width: 30%;
+                height: auto;
+                margin: 5px;
+                padding: 5px;
+                background-color: beige;
+            }
+            
+            .imgCard2 {
+                flex: 1;
+                order: 2;
+                width: 30%;
+                height: auto;
+                margin: 5px;
+                padding: 5px;
+                background-color: antiquewhite;
+            }
+            
+            .imgCard3 {
+                flex: 1;
+                order: 3;
+                width: NaN;
+                height: NaN;
+                margin: 5px;
+                padding: 5px;
+                background-color: blanchedalmond;
+            }
+            
+            .cardContainer3 {
+                display: flex;
+                margin: 5px;
+                padding: 10px;
+            }
+            
+            .CC3card1 {
+                flex: 3;
+                font-family: verdana;
+                text-align: justify;
+                background-color: rgba( 247, 2, 210, .8 );
+                margin: 5px;
+                padding: 10px;
+                color: rgba( 142, 26, 124, 1 );
+                border-bottom: 10px solid rgba( 142, 26, 124, 1 );
+                border-top: 10px solid rgba( 142, 26, 124, 1 );
+            }
+            
+            .CC3card2 {
+                flex: 1;
+                font-family: verdana;
+                text-align: justify;
+                background-color: rgba( 141, 141, 245, .8 );
+                margin: 5px;
+                padding: 10px;
+                color: rgba( 59, 59, 179, 1 );
+                border-top: 10px solid rgba( 59, 59, 179, 1 );
+                border-bottom: 10px solid rgba( 59, 59, 179, 1 );
+            }
+            
+            .flyOut4 {
+                width: 100%;
+                outline-style: solid;
+                outline-color: #15f96c;
+                border-left: 10px solid #15f96c;
+                border-right: 10px solid #15f96c;
+                padding: NaN;
+                margin: 5px;
+                font-family: verdana;
+                text-align: justify;
+            }
+            
+            .flyOut4Child {
+                
+            }
+            
+            .cardContainer4 {
+                width: 100%;
+                display: flex;
+                margin: 5px;
+                padding: 10px;
+                font-family: verdana;
+                text-align: justify;
+            }
+            .CC4card1 {
+                width: 20%;
+                flex: 1;
+                background-color: rgba( 141, 141, 245, .8 );
+                color: rgba( 59, 59, 179, 1 );
+                border-top: 3px solid rgba( 59, 59, 179, 1 );
+                border-left: 3px solid rgba( 59, 59, 179, 1 );
+                border-radius: 10%;
+                margin: 5px;
+                padding: 10px;
+            }
+            
+            .CC4card2 {
+                width: 80%;
+                flex: 3;
+                background-color:  rgba( 247, 2, 210, .8 );
+                color: rgba( 142, 26, 124, 1 );
+                border-left: 3px solid rgba( 142, 26, 124, 1 );
+                border-top: 3px solid rgba( 142, 26, 124, 1 );
+                border-bottom-right-radius: 10%;
+                margin: 0;
+                padding: 10px;
+            }
+        
+        footer {
+                width: 100%;
+                height: auto;
+                background-color: black;
+                color: beige;
+                margin: 5px;
+                padding: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+        <header>
+           <a href="https://digital.com/tools/html-cheatsheet/" target="_blank"><img src="dropDownMenuIcon.jpg" alt="Brand Icon"></a>
+           <h1 style="margin-bottom: 0;">WELCOME TO THE CLOUD - 7 LIBRARY</h1>
+           <h4 style="margin-top: 0;">The most extensive collection of Reading Material online</h4>            
+        </header>
+        <nav class="navbar">
+            <div class="menu">
+                <button class="menubtn">
+                    Menu
+                </button>
+                    <div class="dropdown">
+                        <ul class="dropdownList">
+                            <li class="dropdownListLink">Link 1</li>
+                            <li class="dropdownListLink">Link 2</li>
+                            <li class="dropdownListLink">Link 3</li>
+                        </ul>
+                    </div>
+            </div>
+            <div><button>Button 2</button></div>
+            <div><button>Button 3</button></div>
+            <div><button>Button 4</button></div>
+            <div><button>Button 5</button></div>
+            <div class="formContainer">
+                <input type="text" value="Type here to search" />
+                <button class="searchbtn">Search</button>
+            </div>
+        </nav>
+        <div class="imageContainer">
+            <img class="ic1" src="booksRack.jpg" alt="Books Rack">
+        </div>
+        <div class="sideMainSideContainer">
+            <div class="leftSide">
+                <h3 style="color:brown;">Left side heading</h3>
+                <ul class="leftSideList">
+                    <li>Article 1</li>
+                    <li>Article 2</li>
+                    <li>Article 3</li>
+                    <li>Article 4</li>
+                    <li>Article 5</li>
+                    <li>Article 6</li>
+                </ul>
+            </div>
+            <div class="mainCenter">
+                <h3>Central heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rerum rem odit consequatur, adipisci. Aut eius, sint adipisci repellendus assumenda, sed distinctio nihil maiores ex aliquam, temporibus repellat consequatur deleniti? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates illum facere iure possimus ullam, ipsam quidem aut commodi adipisci dignissimos cupiditate, ex. Aspernatur voluptatum, aut quia enim consequatur error iusto consectetur ab, laudantium nobis ad saepe nihil dicta officia fugiat.</p><a href="#" style="margin-left: 75%; text-decoration: none; color: orange;">...learn more</a>
+            </div>
+            <div class="rightSide">
+                <h3>Right side heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rerum rem odit consequatur, adipisci. Aut eius.</p><a href="#" style="margin-left: 50%; text-decoration: none; color: orange;">...learn more</a>
+            </div>
+        </div>
+        <div class="imageContainer">
+            <img src="girlProfile1.jpg" alt="Smiling girl" style="width: 55%; height: 400px; padding: 5px;">
+            <img src="girlProfile2.jpg" alt="Happy girl" style="width: 45%; height: 400px; padding: 5px;">
+        </div>
+        <div class="flyOut1">
+            <div class="flyOut1Child">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, facere, sint! Obcaecati libero quos eos voluptatibus assumenda odit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci omnis velit neque inventore labore rerum et nostrum in quas. </p>
+            </div>
+        </div><br>
+        <div class="flyOut2">
+            <div class="flyOut2Child">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, facere, sint! Obcaecati libero quos eos voluptatibus assumenda odit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci omnis velit neque inventore labore rerum et nostrum in quas. </p>
+            </div>
+        </div><br>
+        <div class="flyOut3">
+            <div class="flyOut3Child">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, facere, sint! Obcaecati libero quos eos voluptatibus assumenda odit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci omnis velit neque inventore labore rerum et nostrum in quas. </p>
+            </div>
+        </div>
+        <div class="textCardContainer">
+            <div class="textCard1">
+                <h3>Card 1 Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed modi harum, dignissimos accusantium temporibus omnis ex aut ullam fugit, recusandae magnam ad saepe totam quia laboriosam ut delectus culpa numquam maiores, enim aliquid explicabo. Harum velit sequi accusamus repudiandae, quidem, odit minus, saepe ipsum molestias ullam quibusdam commodi, officiis adipisci?</p>
+            </div>
+            <div class="textCard2">
+                <h3>Card 2 Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, iste, consectetur! Similique voluptatum facilis, exercitationem. Quaerat quidem quibusdam dolores aliquam porro laboriosam voluptas, iure molestias officia repellat illum facere beatae earum velit eius ex quis maxime laudantium. Eaque possimus fuga accusantium reprehenderit aperiam facilis placeat velit atque consequatur non quisquam eligendi, autem, totam facere numquam deleniti quae dicta repellat quasi inventore similique cum deserunt. Libero minima cupiditate ipsum dolores. Repudiandae.</p>
+            </div>
+            <div class="textCard3">
+                <h3>Card 3 Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptate culpa pariatur reiciendis eos est consequuntur dicta consequatur nihil impedit ut obcaecati atque, provident aut expedita totam rerum deleniti laboriosam, maiores dolorem excepturi magnam, ex voluptatibus dolorum. Maxime, itaque, corporis tempora, quod ducimus hic sint officiis quas cupiditate adipisci, natus.</p>
+            </div>
+        </div>
+        <div class="cardContainer2">
+            <div class="card1">
+                <h3>Heading 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam itaque nesciunt perferendis fugiat voluptatum totam recusandae laboriosam molestias debitis quibusdam iste accusamus nam aut expedita est aliquid consectetur, alias error ipsa, doloremque cupiditate dolorem maxime reprehenderit! Dolores, eligendi libero asperiores vel accusantium provident dolore, ad quisquam aspernatur enim rem laboriosam.</p>
+            </div>
+            <div class="card2">
+                <h3>Heading 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolores commodi reprehenderit aut esse temporibus. Quae obcaecati officiis exercitationem soluta nesciunt facilis quia, labore necessitatibus accusamus, molestias maiores? Suscipit facere enim accusantium et eaque earum, officiis doloremque ipsum quidem. Sed blanditiis error tempore iusto iste, quod doloribus reprehenderit eius laboriosam?</p>
+            </div>
+        </div>
+        <div class="imgCardContainer">
+            <div class="imgCard1">
+                    <img src="desktop1.jpeg" alt="Desktop Image" style="width: 100%; height: 200px;">
+            </div>
+            <div class="imgCard2">
+                    <img src="desktop2.jpeg" alt="Desktop Image" style="width: 100%; height: 200px;"> 
+            </div>
+            <div class="imgCard3">
+                    <img src="desktop3.jpeg" alt="Desktop Image" style="width: 100%; height: 200px;">
+            </div>
+        </div>
+        <div class="cardContainer3">
+            <div class="CC3card1">
+                <h3>Heading 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam itaque nesciunt perferendis fugiat voluptatum totam recusandae laboriosam molestias debitis quibusdam iste accusamus nam aut expedita est aliquid consectetur, alias error ipsa, doloremque cupiditate dolorem maxime reprehenderit! Dolores, eligendi libero asperiores vel accusantium provident dolore, ad quisquam aspernatur enim rem laboriosam.</p>
+            </div>
+            <div class="CC3card2">
+                <h3>Heading 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolores commodi reprehenderit aut esse temporibus.</p>
+            </div>
+        </div>
+        <div class="flyOut4">
+            <div class="flyOut4Child">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, facere, sint! Obcaecati libero quos eos voluptatibus assumenda odit harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci omnis velit neque inventore labore rerum et nostrum in quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sapiente suscipit fuga itaque voluptatibus libero id. Voluptatem sed perferendis eum enim, rem quaerat accusamus est consequatur temporibus sunt. A sint voluptatem tenetur, libero ullam excepturi, sequi dolorem dolor autem quos repellendus sit, nihil numquam adipisci suscipit! Tenetur repudiandae cum vel?</p>
+            </div>
+        </div>
+        <div class="cardContainer4">
+            <div class="CC4card1">
+                <h3>Heading 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            </div>
+            <div class="CC4card2">
+                <h3>Heading 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolores commodi reprehenderit aut esse temporibus.Quam itaque nesciunt perferendis fugiat voluptatum totam recusandae laboriosam molestias debitis quibusdam iste accusamus nam aut expedita est aliquid consectetur, alias error ipsa, doloremque cupiditate dolorem maxime reprehenderit! Dolores, eligendi libero asperiores vel accusantium provident dolore, ad quisquam aspernatur enim rem laboriosam.</p>
+            </div>
+        </div>
+        <div style="display: flex; width: 100%; height: 300px; padding: 10px; background-color: blueviolet;">
+            <div style="background-image: url('mistyMountain.jpeg'); background-repeat:no-repeat; display: flex; width: 100%; height: 280px; margin: auto; padding: 10px;">
+                <h2 style="margin: 200px auto 80px auto; color: beige; font-family: cursive; font-weight: 10; font-size: 36px; font-style: italic;">Lorem ipsum dolor sit amet.</h2>
+            </div>
+        </div>
+        <footer style="display: flex; margin: 5px;">
+            <div style="flex: 1; color: antiquewhite; text-align: left;">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+            </div>
+            <div style="flex: 2; color: antiquewhite; text-align: center;"><p style="position: relative; margin-bottom: 0;">Find us On:</p>
+                <div style="width: 150px; display: inline-flex; justify-content: space-between; margin-top: 0;"><img src="fbLogo.jpg" alt="Social media icons" style="margin: auto; position: relative; margin-top: 25px; width: 20px; height: 20px;"><img src="twitterLogo.jpg" alt="Social media icons" style="margin: auto; position: relative; margin-top: 25px; width: 20px; height: 20px;"><img src="LinkedInLogo.jpg" alt="Social media icons" style="margin: auto; position: relative; margin-top: 25px; width: 20px; height: 20px;"><img src="YouTubeLogo.jpg" alt="Social media icons" style="margin: auto; position: relative; margin-top: 25px; width: 20px; height: 20px;"></div><address style="margin: 10px;">15/125, Fifth Ave. NYC, USA</address><p style="width: auto; margin: 50px 5px 15px 5px; position: relative;">Copyright &copy; c54 Multimedia Inc. All rights reserved.</p>
+            </div>
+            <div style="flex: 1; padding-right: 0; margin-right: 0; color: antiquewhite; text-align: right;">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+                <p><a href="#" style="text-decoration: none; color: antiquewhite;">Lorem ipsum dolor sit.</a></p>
+            </div>
+            </footer>
+    </body>
+</html>
